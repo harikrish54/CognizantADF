@@ -1,0 +1,16 @@
+{
+	"name": "SqlServerLocal",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=Harisql2017;initial catalog=AdventureWorks2014",
+			"userName": "hari",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0MWQ0NjQ3Ny01NmMxLTQzMDItOWZlNC0zYjNlYzg3NGY4NTIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "hariir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "Dataset_AzureDataLakeStore_Hari",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoreLSday2",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureDataLakeStoreFile",
+		"structure": [
+			{
+				"name": "SalesOrderId"
+			},
+			{
+				"name": "OrderDate"
+			},
+			{
+				"name": "SubTotal"
+			},
+			{
+				"name": "ModifiedDate"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "Sales",
+			"folderPath": {
+				"value": "/@{formatDateTime(adddays(utcnow(), -1), 'yyyy')}/@{formatDateTime(adddays(utcnow(), -1), 'MM')}/@{formatDateTime(adddays(utcnow(), -1), 'dd')}",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "Executemodelprocessing",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"url": "https://prod-17.northeurope.logic.azure.com:443/workflows/33fbd32c8d644da1852ce985573296b4/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2vhUHPhn90RDfV6irM91ehkNTsq1pAF0m_npWpwLzsE",
+					"method": "POST",
+					"body": {
+						"message": "hello world"
+					}
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

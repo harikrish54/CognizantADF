@@ -1,0 +1,29 @@
+{
+	"name": "SqlServerconnection",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1local",
+			"type": "LinkedServiceReference"
+		},
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "SalesOrderId",
+				"type": "Int32"
+			},
+			{
+				"name": "OrderDate",
+				"type": "DateTime"
+			},
+			{
+				"name": "SubTotal",
+				"type": "String"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "DateTime"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

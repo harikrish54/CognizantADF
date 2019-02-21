@@ -1,0 +1,16 @@
+{
+	"name": "HariLocalfile",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Temp\\Files",
+			"userId": "hari",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4MzFhZTBiMi1iZTk1LTQ0MjYtYWM3ZS1mNDdkOTc5YTNhZjciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "hariir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

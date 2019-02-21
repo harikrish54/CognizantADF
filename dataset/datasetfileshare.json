@@ -1,0 +1,12 @@
+{
+	"name": "datasetfileshare",
+	"properties": {
+		"description": "data set for c:\\temp\\files from the file system",
+		"linkedServiceName": {
+			"referenceName": "HariLocalfile",
+			"type": "LinkedServiceReference"
+		},
+		"type": "FileShare"
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
